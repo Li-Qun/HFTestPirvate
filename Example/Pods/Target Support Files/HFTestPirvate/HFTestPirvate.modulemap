@@ -1,0 +1,6 @@
+framework module HFTestPirvate {
+  umbrella header "HFTestPirvate-umbrella.h"
+
+  export *
+  module * { export * }
+}
