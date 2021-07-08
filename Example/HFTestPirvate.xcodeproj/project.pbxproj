@@ -60,13 +60,15 @@
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		6AF937596BE5F91D4E8C7F7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		6AF937596BE5F91D4E8C7F7F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		92429DFC0D42A2457A7E0843 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		92429DFC0D42A2457A7E0843 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		980C3A04AE4AAB08625A3EA2 /* Pods_HFTestPirvate_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HFTestPirvate_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48538370FC6DBFCBFE9117D /* Pods-HFTestPirvate_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HFTestPirvate_Example.debug.xcconfig"; path = "Target Support Files/Pods-HFTestPirvate_Example/Pods-HFTestPirvate_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C51863E21A9A352453BD292F /* HFTestPirvate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HFTestPirvate.podspec; path = ../HFTestPirvate.podspec; sourceTree = "<group>"; };
+		C51863E21A9A352453BD292F /* HFTestPirvate.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = HFTestPirvate.podspec; path = ../HFTestPirvate.podspec; sourceTree = "<group>"; };
+		E47608F62695BF42003A8829 /* HFTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HFTest.h; path = ../HFTestPirvate/Classes/HFTest.h; sourceTree = "<group>"; };
+		E47608F72695BF42003A8829 /* HFTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = HFTest.m; path = ../HFTestPirvate/Classes/HFTest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,8 @@
 				C51863E21A9A352453BD292F /* HFTestPirvate.podspec */,
 				92429DFC0D42A2457A7E0843 /* README.md */,
 				6AF937596BE5F91D4E8C7F7F /* LICENSE */,
+				E47608F62695BF42003A8829 /* HFTest.h */,
+				E47608F72695BF42003A8829 /* HFTest.m */,
 			);
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
@@ -193,7 +197,6 @@
 				56CAA4407C09931F9659EE74 /* Pods-HFTestPirvate_Tests.debug.xcconfig */,
 				4F19090C2A7B85F07351563B /* Pods-HFTestPirvate_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -259,6 +262,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -474,7 +478,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -507,7 +511,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -522,6 +526,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HFTestPirvate/HFTestPirvate-Prefix.pch";
 				INFOPLIST_FILE = "HFTestPirvate/HFTestPirvate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -538,6 +543,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "HFTestPirvate/HFTestPirvate-Prefix.pch";
 				INFOPLIST_FILE = "HFTestPirvate/HFTestPirvate-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
